@@ -1,13 +1,14 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main() {
-    printf("       J\n");
-    printf("       J\n");
-    printf("       J\n");
-    printf("       J\n");
-    printf("       J\n");
-    printf("J      J\n");
-    printf("J      J\n");
-    printf(" J J J\n");
+    cout << "D D D D D    M       M" << endl;
+    cout << "D        D   MM     MM" << endl;
+    cout << "D        D   M M   M M" << endl;
+    cout << "D        D   M  M M  M" << endl;
+    cout << "D        D   M   M   M" << endl;
+    cout << "D        D   M       M" << endl;
+    cout << "D        D   M       M" << endl;
+    cout << "D D D D D    M       M" << endl;
     return 0;
 }
