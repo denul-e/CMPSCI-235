@@ -5,9 +5,8 @@ using namespace std;
 
 const int MIN_NUMBER = 1;
 const int MAX_NUMBER = 8;
-int image_number = 1;  // Global variable
+int image_number = 1;  
 
-// Function to advance the current number by one
 int forward(int current_number) {
     if (current_number < MAX_NUMBER) {
         return current_number + 1;
@@ -16,7 +15,6 @@ int forward(int current_number) {
     }
 }
 
-// Function to move the current number backward by one
 int backward(int current_number) {
     if (current_number > MIN_NUMBER) {
         return current_number - 1;
@@ -25,18 +23,15 @@ int backward(int current_number) {
     }
 }
 
-// Function to create a file name based on the current number
 string createFileName(int current_number) {
     return "picture" + to_string(current_number) + ".gif";
 }
 
-// Function to create a random file name
 string createRandomName() {
     int random_number = rand() % (MAX_NUMBER - MIN_NUMBER + 1) + MIN_NUMBER;
     return "picture" + to_string(random_number) + ".gif";
 }
 
-// Function to display the menu and handle user input
 void showMenu() {
     int choice;
     do {
