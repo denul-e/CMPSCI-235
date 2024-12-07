@@ -1,10 +1,10 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main() {
-    // Printing the COC pattern
-    printf(" C   C     O   O        C   C\n");
-    printf("C         O     O     C\n");
-    printf("C         O     O     C\n");
-    printf(" C   C     O   O        C   C\n");
+    cout << "  C C     O O        C C" << endl;
+    cout << "C       O     O    C" << endl;
+    cout << "C       O     O    C" << endl;
+    cout << "  C C     O O        C C" << endl;
     return 0;
 }
