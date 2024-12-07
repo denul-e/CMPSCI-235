@@ -1,0 +1,49 @@
+forward Algorithm: This algorithm advances the current number by one, wrapping around when the maximum value is reached.
+
+Flowchart:
+
+    Start
+    Check if current_number is less than MAX_NUMBER
+        Yes: Return current_number + 1
+        No: Return MIN_NUMBER
+    End
+
+Pseudo Code:
+
+function forward(current_number):
+    if current_number < MAX_NUMBER:
+        return current_number + 1
+    else:
+        return MIN_NUMBER
+
+backward Algorithm: This algorithm moves the current number backward by one, but stops at the minimum value.
+
+Flowchart:
+
+    Start
+    Check if current_number is greater than MIN_NUMBER
+        Yes: Return current_number - 1
+        No: Return MIN_NUMBER
+    End
+
+Pseudo Code:
+
+function backward(current_number):
+    if current_number > MIN_NUMBER:
+        return current_number - 1
+    else:
+        return MIN_NUMBER
+
+createFileName Algorithm: This algorithm builds and returns a string that represents a file name based on the given number.
+
+Flowchart:
+
+    Start
+    Concatenate the string "picture" with the number and ".gif"
+    Return the resulting string
+    End
+
+Pseudo Code:
+
+function createFileName(current_number):
+    return "picture" + current_number + ".gif"
